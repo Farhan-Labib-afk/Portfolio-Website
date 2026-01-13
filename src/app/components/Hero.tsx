@@ -4,13 +4,13 @@ import { Button } from "./ui/button";
 
 const techStack = [
   { name: "Python", icon: "🐍" },
-  { name: "TensorFlow", icon: "🧠" },
-  { name: "PyTorch", icon: "🔥" },
-  { name: "SQL", icon: "🗄️" },
-  { name: "React", icon: "⚛️" },
+  { name: "TypeScript", icon: "🔷" },
+  { name: "React Native", icon: "📱" },
+  { name: "Next.js", icon: "⚡" },
   { name: "Flask", icon: "🌶️" },
-  { name: "PostgreSQL", icon: "🐘" },
-  { name: "Docker", icon: "🐳" },
+  { name: "Supabase", icon: "🧩" },
+  { name: "PyTorch", icon: "🔥" },
+  { name: "MySQL", icon: "🐬" },
 ];
 
 export function Hero() {

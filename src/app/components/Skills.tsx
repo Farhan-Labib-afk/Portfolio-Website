@@ -5,73 +5,49 @@ import {
   Code2,
   Brain,
   Server,
-  Database,
   Wrench,
-  Cloud,
+  Layout,
+  Database,
 } from "lucide-react";
 
 const skillCategories = [
   {
     title: "Languages",
     icon: Code2,
+    skills: ["Python", "TypeScript", "Java", "JavaScript", "SQL"],
+  },
+  {
+    title: "Frontend",
+    icon: Layout,
     skills: [
-      "Python",
-      "JavaScript/TypeScript",
-      "Java",
-      "C/C++",
-      "SQL",
-      "Bash",
+      "React Native",
+      "Next.js", "HTML", "CSS", "Tailwind CSS",
     ],
   },
   {
-    title: "ML & Data",
+    title: "Backend / Data",
+    icon: Database,
+    skills: [
+      "Flask",
+      "Supabase",
+      "MySQL",
+      "PostgreSQL",
+    ],
+  },
+  {
+    title: "ML / Data Science",
     icon: Brain,
     skills: [
       "PyTorch",
-      "TensorFlow",
-      "Scikit-learn",
-      "Pandas",
+      "scikit-learn",
+      "pandas",
       "NumPy",
-      "OpenCV",
-      "Hugging Face",
-      "NLTK",
     ],
   },
   {
-    title: "Web & Backend",
-    icon: Server,
-    skills: [
-      "React",
-      "Node.js",
-      "Flask",
-      "Django",
-      "Express",
-      "REST APIs",
-      "GraphQL",
-      "WebSocket",
-    ],
-  },
-  {
-    title: "Databases",
-    icon: Database,
-    skills: [
-      "PostgreSQL",
-      "MongoDB",
-      "Redis",
-      "MySQL",
-      "Neo4j",
-      "Elasticsearch",
-    ],
-  },
-  {
-    title: "DevOps & Tools",
+    title: "Tools",
     icon: Wrench,
-    skills: ["Git", "Docker", "Linux", "Nginx", "Jest", "pytest"],
-  },
-  {
-    title: "Cloud & Infrastructure",
-    icon: Cloud,
-    skills: ["AWS (EC2, S3, Lambda)", "GCP", "Kubernetes", "CI/CD", "Terraform"],
+    skills: ["Git", "Jira", "Clickup", "Streamlit"],
   },
 ];
 
