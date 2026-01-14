@@ -18,7 +18,7 @@ export const projects: CategorizedProject[] = [
     title: "The Gist (Capstone) - iOS News App",
     description:
       "Cross-platform product work focused on authenticated experiences, secure data access, and AI summarization (NDA-safe details).",
-    image: "/images/gist.jpg",
+    image: `${import.meta.env.BASE_URL}images/gist.jpg`,
     tags: [
       "React Native",
       "Expo",
@@ -55,7 +55,7 @@ export const projects: CategorizedProject[] = [
     title: "MedML Toolkit - Precision Medicine ML Pipeline",
     description:
       "Packaged Python toolkit + Streamlit UI for feature selection, model training, cross-validated evaluation, and diagnostic plots.",
-    image: "/images/medml.jpg",
+    image: `${import.meta.env.BASE_URL}images/medml.jpg`,
     tags: [
       "Python",
       "scikit-learn",
@@ -92,7 +92,7 @@ export const projects: CategorizedProject[] = [
     title: "CIFAR-10 CNN Classifier - Scratch vs ResNet18",
     description:
       "PyTorch training pipeline + Streamlit dashboard comparing a custom CNN against transfer learning with ResNet18 on CIFAR-10.",
-    image: "/images/cifar.jpg",
+    image: `${import.meta.env.BASE_URL}images/cifar.jpg`,
     tags: [
       "PyTorch",
       "Torchvision",
@@ -128,7 +128,7 @@ export const projects: CategorizedProject[] = [
     title: "Self-Checkout System Simulator",
     description:
       "Java desktop simulation with customer/attendant UIs, bagging-area discrepancy logic, and payment flows validated with JUnit tests. Code available upon request.",
-    image: "/images/checkout_system.jpg",
+    image: `${import.meta.env.BASE_URL}images/checkout_system.jpg`,
     tags: ["Java", "Swing", "JUnit", "OOP", "Simulation"],
     problem:
       "Self-checkout software must handle many real-world edge cases: scanning vs PLU entry, weight discrepancies, attendant approvals, and multiple payment methods.",
@@ -156,7 +156,7 @@ export const projects: CategorizedProject[] = [
     title: "Computer Component Store (DBMS Group Project)",
     description:
       "Full-stack store with customer + admin workflows, built using Flask + MySQL with HTML/CSS/JS frontend. Code available upon request.",
-    image: "/images/dbms.jpg",
+    image: `${import.meta.env.BASE_URL}images/dbms.jpg`,
     tags: ["Flask", "MySQL", "HTML", "CSS", "JavaScript"],
     problem:
       "Managing an online store requires reliable data modeling for products, orders, suppliers, deliveries, and role-based admin operations.",

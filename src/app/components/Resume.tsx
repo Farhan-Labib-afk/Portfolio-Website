@@ -45,7 +45,7 @@ export function Resume() {
                     onClick={() => {
                       // In a real implementation, this would download the actual PDF
                       const link = document.createElement("a");
-                      link.href = "/resume/Farhan_Labib_Resume.pdf";
+                      link.href = `${import.meta.env.BASE_URL}resume/Farhan_Labib_Resume.pdf`;
                       link.download = "Farhan_Labib_Resume.pdf";
                       link.click();
                     }}
@@ -59,7 +59,10 @@ export function Resume() {
                     size="lg"
                     onClick={() => {
                       // In a real implementation, this would open the PDF in a new tab
-                      window.open("/resume/Farhan_Labib_Resume.pdf", "_blank");
+                      window.open(
+                        `${import.meta.env.BASE_URL}resume/Farhan_Labib_Resume.pdf`,
+                        "_blank"
+                      );
                     }}
                   >
                     <Eye className="w-4 h-4 mr-2" />

@@ -77,7 +77,12 @@ export function Hero() {
               variant="outline"
               size="lg"
               className="border-gray-300 dark:border-slate-600 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-slate-800/60"
-              onClick={() => window.open("/resume/Farhan_Labib_Resume.pdf", "_blank")}
+              onClick={() =>
+                window.open(
+                  `${import.meta.env.BASE_URL}resume/Farhan_Labib_Resume.pdf`,
+                  "_blank"
+                )
+              }
             >
               <FileText className="w-4 h-4 mr-2" />
               Download Resume

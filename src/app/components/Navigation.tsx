@@ -103,7 +103,12 @@ export function Navigation() {
               )}
             </Button>
             <Button
-              onClick={() => window.open("/resume/Farhan_Labib_Resume.pdf", "_blank")}
+              onClick={() =>
+                window.open(
+                  `${import.meta.env.BASE_URL}resume/Farhan_Labib_Resume.pdf`,
+                  "_blank"
+                )
+              }
               className="bg-indigo-600 hover:bg-indigo-700 text-white"
             >
               Resume
@@ -157,7 +162,10 @@ export function Navigation() {
             ))}
             <Button
               onClick={() => {
-                window.open("/resume/Farhan_Labib_Resume.pdf", "_blank");
+                window.open(
+                  `${import.meta.env.BASE_URL}resume/Farhan_Labib_Resume.pdf`,
+                  "_blank"
+                );
                 setIsMobileMenuOpen(false);
               }}
               className="w-full bg-indigo-600 hover:bg-indigo-700 text-white"
