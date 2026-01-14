@@ -150,7 +150,7 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-3 animate-in slide-in-from-top">
+          <div className="md:hidden mt-4 pb-4 space-y-3 animate-in slide-in-from-top rounded-xl bg-white/95 dark:bg-slate-950/95 backdrop-blur-md shadow-lg border border-gray-200/60 dark:border-slate-700/60">
             {navItems.map((item) => (
               <button
                 key={item.id}
