@@ -34,7 +34,7 @@ export function Resume() {
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Available for 4/8/12/16 months internships starting Summer 2026 in Machine Learning
                   Engineering, Backend Development, or Full-Stack roles.
-                  Open to relocating anywhere in the Canada.
+                  Open to relocating anywhere in Canada.
                 </p>
                 <div className="mb-6 h-px bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
 
