@@ -9,7 +9,7 @@ export function Resume() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="resume" className="py-20 px-4 bg-gray-50 dark:bg-slate-900">
+    <section id="resume" className="py-20 px-4 bg-gray-100 dark:bg-slate-900">
       <div className="max-w-4xl mx-auto">
         <motion.div
           ref={ref}
@@ -32,9 +32,9 @@ export function Resume() {
                   Farhan Labib - Resume
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Computer Science Student focused on full-stack development and
-                  applied machine learning. Capstone developer on a news app,
-                  shipping features across the stack.
+                  Available for 4/8/12/16 months internships starting Summer 2026 in Machine Learning
+                  Engineering, Backend Development, or Full-Stack roles.
+                  Open to relocating anywhere in the Canada.
                 </p>
                 <div className="mb-6 h-px bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
 
@@ -75,3 +75,4 @@ export function Resume() {
     </section>
   );
 }
+

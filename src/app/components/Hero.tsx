@@ -23,7 +23,7 @@ export function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-b from-white to-gray-50 dark:from-slate-950 dark:to-slate-900">
+    <section id="hero" className="py-20 px-4 bg-gray-100 dark:bg-slate-900">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -81,7 +81,7 @@ export function Hero() {
               variant="outline"
               size="lg"
               className="border-gray-300 dark:border-slate-600 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-slate-800/60"
-              onClick={() => window.open("/resume.pdf", "_blank")}
+              onClick={() => window.open("/resume/Farhan_Labib_Resume.pdf", "_blank")}
             >
               <FileText className="w-4 h-4 mr-2" />
               Download Resume

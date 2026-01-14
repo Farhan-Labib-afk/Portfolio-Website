@@ -7,7 +7,7 @@ export function Contact() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   return (
-    <section id="contact" className="py-20 px-4 bg-gray-50 dark:bg-slate-900">
+    <section id="contact" className="py-20 px-4 bg-gray-100 dark:bg-slate-900">
       <div className="max-w-5xl mx-auto">
         <motion.div
           ref={ref}
@@ -18,17 +18,6 @@ export function Contact() {
           <h2 className="mt-8 text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4 text-center">
             Get In Touch
           </h2>
-          <div className="mt-8 p-6 bg-white dark:bg-slate-950 rounded-lg border border-gray-200 dark:border-slate-700">
-                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                  Looking for internships
-                </h4>
-                <div className="my-3 h-px bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
-                <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Available for Summer 2026 internships in Machine Learning
-                  Engineering, Backend Development, or Full-Stack roles.
-                  Open to relocating anywhere in the US.
-                </p>
-              </div>
           <div className="grid gap-12">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -42,7 +31,7 @@ export function Contact() {
               <div className="space-y-4">
                 <a
                   href="mailto:farhan.labib@ucalgary.ca"
-                  className="flex items-center gap-4 p-4 bg-white dark:bg-slate-950 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors group"
+                  className="flex items-center gap-4 p-4 bg-white dark:bg-slate-950 rounded-lg border border-gray-200 dark:border-slate-700 hover:border-indigo-200 dark:hover:border-indigo-500/40 hover:shadow-md transition-all duration-300 group"
                 >
                   <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/40 rounded-lg flex items-center justify-center group-hover:bg-indigo-200 dark:group-hover:bg-indigo-900/60 transition-colors">
                     <Mail className="w-6 h-6 text-indigo-600" />
@@ -60,7 +49,7 @@ export function Contact() {
                   href="https://github.com/Farhan-Labib-afk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-white dark:bg-slate-950 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors group"
+                  className="flex items-center gap-4 p-4 bg-white dark:bg-slate-950 rounded-lg border border-gray-200 dark:border-slate-700 hover:border-indigo-200 dark:hover:border-indigo-500/40 hover:shadow-md transition-all duration-300 group"
                 >
                   <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/40 rounded-lg flex items-center justify-center group-hover:bg-indigo-200 dark:group-hover:bg-indigo-900/60 transition-colors">
                     <Github className="w-6 h-6 text-indigo-600" />
@@ -78,7 +67,7 @@ export function Contact() {
                   href="https://www.linkedin.com/in/farhan-labib-edu/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-white dark:bg-slate-950 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors group"
+                  className="flex items-center gap-4 p-4 bg-white dark:bg-slate-950 rounded-lg border border-gray-200 dark:border-slate-700 hover:border-indigo-200 dark:hover:border-indigo-500/40 hover:shadow-md transition-all duration-300 group"
                 >
                   <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/40 rounded-lg flex items-center justify-center group-hover:bg-indigo-200 dark:group-hover:bg-indigo-900/60 transition-colors">
                     <Linkedin className="w-6 h-6 text-indigo-600" />
@@ -99,3 +88,5 @@ export function Contact() {
     </section>
   );
 }
+
+

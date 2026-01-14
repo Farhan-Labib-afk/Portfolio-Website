@@ -8,7 +8,7 @@ export function About() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="py-20 px-4 bg-gray-50 dark:bg-slate-900">
+    <section id="about" className="py-20 px-4 bg-gray-100 dark:bg-slate-900">
       <div className="max-w-5xl mx-auto">
         <motion.div
           ref={ref}
@@ -36,8 +36,8 @@ export function About() {
               <div className="my-4 h-px bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
               <p className="text-gray-600 dark:text-gray-300">
                 Computer Science major at University of Calgary (Class of 2027).
-                Relevant coursework: Machine Learning, Database
-                Systems, Deep Learning, Algorithms.
+                Relevant coursework: Data Structure & Algorithms, Database Management Systems, 
+                Computer Network, Software Project Management.
               </p>
             </motion.div>
 
@@ -73,9 +73,7 @@ export function About() {
               </h3>
               <div className="my-4 h-px bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
               <p className="text-gray-600 dark:text-gray-300">
-                Passionate about leveraging AI to solve complex problems and
-                building systems that scale. I believe great software comes from
-                understanding both theory and practice.
+                I like making projects that solve real problems.
               </p>
             </motion.div>
           </div>
@@ -84,3 +82,4 @@ export function About() {
     </section>
   );
 }
+

@@ -58,6 +58,13 @@ export function ProjectModal({ project, open, onClose }: ProjectModalProps) {
             ))}
           </div>
 
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
+              Overview
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300">{project.description}</p>
+          </div>
+
           <div className="flex gap-3">
             {project.githubUrl && (
               <Button
