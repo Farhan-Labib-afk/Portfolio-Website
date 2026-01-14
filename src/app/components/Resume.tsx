@@ -32,9 +32,9 @@ export function Resume() {
                   Farhan Labib - Resume
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Computer Science Student specializing in Machine Learning and
-                  Full-Stack Development. Download for detailed information on
-                  education, projects, experience, and skills.
+                  Computer Science Student focused on full-stack development and
+                  applied machine learning. Capstone developer on a news app,
+                  shipping features across the stack.
                 </p>
                 <div className="mb-6 h-px bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
 
@@ -45,8 +45,8 @@ export function Resume() {
                     onClick={() => {
                       // In a real implementation, this would download the actual PDF
                       const link = document.createElement("a");
-                      link.href = "/resume.pdf";
-                      link.download = "Alex_Chen_Resume.pdf";
+                      link.href = "/resume/Farhan_Labib_Resume.pdf";
+                      link.download = "Farhan_Labib_Resume.pdf";
                       link.click();
                     }}
                   >
@@ -59,7 +59,7 @@ export function Resume() {
                     size="lg"
                     onClick={() => {
                       // In a real implementation, this would open the PDF in a new tab
-                      window.open("/resume.pdf", "_blank");
+                      window.open("/resume/Farhan_Labib_Resume.pdf", "_blank");
                     }}
                   >
                     <Eye className="w-4 h-4 mr-2" />
@@ -69,30 +69,6 @@ export function Resume() {
               </div>
             </div>
 
-            <div className="mt-8 pt-8 border-t border-gray-200 dark:border-slate-700">
-              <div className="grid md:grid-cols-3 gap-6 text-center">
-                <div>
-                  <div className="text-3xl font-bold text-indigo-600 mb-1">
-                    3.9
-                  </div>
-                  <div className="text-sm text-gray-600 dark:text-gray-300">GPA</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-indigo-600 mb-1">
-                    4+
-                  </div>
-                  <div className="text-sm text-gray-600 dark:text-gray-300">
-                    Internship Experiences
-                  </div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-indigo-600 mb-1">
-                    10+
-                  </div>
-                  <div className="text-sm text-gray-600 dark:text-gray-300">Major Projects</div>
-                </div>
-              </div>
-            </div>
           </div>
         </motion.div>
       </div>

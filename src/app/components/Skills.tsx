@@ -32,6 +32,8 @@ const skillCategories = [
       "Supabase",
       "MySQL",
       "PostgreSQL",
+      "RESTful APIs",
+      "ETL Pipelines",
     ],
   },
   {
@@ -47,7 +49,7 @@ const skillCategories = [
   {
     title: "Tools",
     icon: Wrench,
-    skills: ["Git", "Jira", "Clickup", "Streamlit"],
+    skills: ["Git", "PowerBI", "Jira", "Clickup", "Streamlit"],
   },
 ];
 

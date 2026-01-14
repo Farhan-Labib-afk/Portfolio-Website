@@ -32,7 +32,7 @@ export function Hero() {
         >
           <div className="mb-4 flex items-center justify-center gap-3">
             <a
-              href="https://github.com"
+              href="https://github.com/Farhan-Labib-afk"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
@@ -40,7 +40,7 @@ export function Hero() {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/farhan-labib-edu/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
@@ -48,7 +48,7 @@ export function Hero() {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:student@university.edu"
+              href="mailto:farhan.labib@ucalgary.ca"
               className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
               <Mail className="w-5 h-5" />

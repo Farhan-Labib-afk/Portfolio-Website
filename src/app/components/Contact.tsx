@@ -57,7 +57,7 @@ export function Contact() {
                 </a>
 
                 <a
-                  href="https://github.comhttps://github.com/Farhan-Labib-afk"
+                  href="https://github.com/Farhan-Labib-afk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 bg-white dark:bg-slate-950 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors group"
