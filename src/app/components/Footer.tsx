@@ -22,7 +22,7 @@ export function Footer() {
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold mb-2">Farhan Labib</h3>
             <p className="text-gray-400 dark:text-gray-500">
-              CS Student | ML & Full-Stack Developer
+              CS @UofCalgary | ML & Full-Stack Developer
             </p>
           </div>
 

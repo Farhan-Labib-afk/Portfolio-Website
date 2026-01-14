@@ -60,14 +60,10 @@ export function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-200 mb-6">
-            Computer Science Student | ML & Full-Stack Developer
+            CS @UofCalgary | ML & Full-Stack Developer
           </p>
 
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            Building intelligent systems and scalable applications. Focused on
-            applying machine learning to real-world problems through clean,
-            efficient code.
-          </p>
+          
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
             <Button
