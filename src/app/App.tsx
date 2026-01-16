@@ -16,11 +16,11 @@ export default function App() {
       <div className="mx-auto h-px w-full max-w-6xl bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
       <About />
       <div className="mx-auto h-px w-full max-w-6xl bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
+      <Experience />
+      <div className="mx-auto h-px w-full max-w-6xl bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
       <Projects />
       <div className="mx-auto h-px w-full max-w-6xl bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
       <Skills />
-      <div className="mx-auto h-px w-full max-w-6xl bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
-      {/* <Experience /> */}
       <div className="mx-auto h-px w-full max-w-6xl bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
       <Resume />
       <div className="mx-auto h-px w-full max-w-6xl bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />

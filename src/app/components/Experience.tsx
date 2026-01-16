@@ -5,67 +5,24 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    company: "DeepMind (Google)",
-    position: "Machine Learning Research Intern",
-    location: "London, UK (Remote)",
-    duration: "Jun 2025 - Sep 2025",
+    company: "The Gist",
+    position: "Software Developer (Capstone - Industry Partner)",
+    location: "Remote",
+    duration: "Sept 2025 - Present",
     description:
-      "Working on reinforcement learning algorithms for robotics manipulation tasks.",
+      "Contribute to the development and maintenance of The Gist - Summarized News, a production iOS app available on the Apple App Store.",
     responsibilities: [
-      "Implemented novel reward shaping techniques improving sample efficiency by 30%",
-      "Collaborated with senior researchers on multi-agent RL project",
-      "Contributed to internal ML infrastructure used by 50+ researchers",
+      "Implement user-facing features and resolve bugs in a React Native + TypeScript + Expo codebase, improving reliability and overall UX.",
+      "Support Android pre-release testing by debugging platform-specific issues and validating builds in a test environment.",
+      "Collaborate with stakeholders and teammates in an Agile workflow, participating in sprint planning, peer code reviews, and feature demos.",
+      "Maintain and troubleshoot backend functionality using Supabase (Auth + database) and external APIs, including making backend configuration and data updates when required.",
+      "Use GitHub-based workflows including feature branching, pull requests, and coordinated versioned releases.",
+      "Write and maintain unit tests for shipped features to improve code quality and prevent regressions.",
     ],
-    tags: ["PyTorch", "RL", "Robotics"],
-    color: "border-l-blue-500",
-  },
-  /*
-  {
-    company: "Stripe",
-    position: "Software Engineering Intern",
-    location: "San Francisco, CA",
-    duration: "Jun 2024 - Sep 2024",
-    description:
-      "Full-stack development on payment infrastructure serving millions of transactions daily.",
-    responsibilities: [
-      "Built real-time fraud detection pipeline processing 10K+ events/sec",
-      "Reduced API latency by 40% through database query optimization",
-      "Shipped features to production used by Fortune 500 companies",
-    ],
-    tags: ["Ruby", "PostgreSQL", "React"],
+    tags: ["React Native", "TypeScript", "Expo", "Supabase"],
     color: "border-l-indigo-500",
   },
-  {
-    company: "Stanford AI Lab",
-    position: "Undergraduate Researcher",
-    location: "Stanford, CA",
-    duration: "Sep 2023 - Present",
-    description:
-      "Research on neural architecture search and meta-learning under Prof. Sarah Johnson.",
-    responsibilities: [
-      "Developed efficient NAS algorithm reducing search time by 10x",
-      "Co-authored paper submitted to NeurIPS 2025",
-      "Mentored 2 freshman students on research methodology",
-    ],
-    tags: ["PyTorch", "Research", "Meta-Learning"],
-    color: "border-l-green-500",
-  },
-  {
-    company: "DataCorp Analytics",
-    position: "Data Science Intern",
-    location: "New York, NY",
-    duration: "Jun 2023 - Aug 2023",
-    description:
-      "Built predictive models for customer behavior analysis in e-commerce.",
-    responsibilities: [
-      "Deployed ML models predicting customer churn with 87% accuracy",
-      "Created interactive dashboards visualizing insights for executives",
-      "Automated ETL pipelines saving 15 hours/week of manual work",
-    ],
-    tags: ["Python", "Scikit-learn", "SQL"],
-    color: "border-l-purple-500",
-  },
-  */
+  
 ];
 
 export function Experience() {

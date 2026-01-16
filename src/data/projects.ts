@@ -17,7 +17,7 @@ export const projects: CategorizedProject[] = [
     featured: true,
     title: "The Gist (Capstone) - iOS News App",
     description:
-      "Cross-platform product work focused on authenticated experiences, secure data access, and AI summarization (NDA-safe details).",
+      "Cross-platform product work focused on authenticated experiences, secure data access, and AI summarization.",
     image: `${import.meta.env.BASE_URL}images/gist.jpg`,
     tags: [
       "React Native",
