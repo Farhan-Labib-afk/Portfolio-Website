@@ -48,6 +48,45 @@ export const projects: CategorizedProject[] = [
       "Delivered features iteratively via milestone-driven Agile collaboration",
     ],
   },
+    {
+    id: "studypulse",
+    category: "Product Engineering",
+    featured: true,
+    title: "StudyPulse - Student Productivity & Wellbeing Web App",
+    description:
+      "Full-stack web app with tasks, daily check-ins, and burnout insights, built with a clean architecture backend and a modern React UI.",
+    image: `${import.meta.env.BASE_URL}images/studypulse.jpg`,
+    tags: [
+      "C#",
+      ".NET 8",
+      "EF Core",
+      "PostgreSQL",
+      "React",
+      "TypeScript",
+      "Vite",
+      "Docker",
+    ],
+    // githubUrl: "https://github.com/<your-username>/<repo>",
+    problem:
+      "Students juggle deadlines and wellbeing without a unified, lightweight way to track progress and stress signals.",
+    solution:
+      "Built a focused workflow for planning tasks, logging daily check-ins, and surfacing a weekly burnout score to guide balance.",
+    architecture: [
+      "ASP.NET Core Web API with Clean Architecture (Domain/Application/Infrastructure/WebApi)",
+      "EF Core + PostgreSQL with migrations for users, tasks, check-ins, refresh tokens",
+      "JWT auth with refresh tokens and secure password hashing",
+      "React + TypeScript frontend with feature-based structure and TanStack Query",
+      "Docker Compose stack for local development (db, backend, frontend)",
+    ],
+    technicalDetails:
+      "Implemented auth flows, task CRUD with filters, check-in upsert, and dashboard summary analytics. Added unit + integration tests and a CI workflow for automated checks.",
+    results: [
+      "Delivered end-to-end product flow: register/login, tasks, check-ins, dashboard",
+      "Built profile editing and secure token lifecycle",
+      "Enabled local reproducible dev via Docker Compose",
+      "Added automated tests and CI to reduce regressions",
+    ],
+  },
   {
     id: "medml-toolkit",
     category: "Machine Learning / AI",

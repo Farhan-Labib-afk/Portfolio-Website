@@ -14,14 +14,19 @@ const skillCategories = [
   {
     title: "Languages",
     icon: Code2,
-    skills: ["Python", "TypeScript", "Java", "JavaScript", "SQL"],
+    skills: ["Python", "TypeScript", "Java", "JavaScript", "C#", "SQL"],
   },
   {
     title: "Frontend",
     icon: Layout,
     skills: [
+      "React",
       "React Native",
-      "Next.js", "HTML", "CSS", "Tailwind CSS",
+      "Next.js",
+      "Vite",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
     ],
   },
   {
@@ -29,6 +34,8 @@ const skillCategories = [
     icon: Database,
     skills: [
       "Flask",
+      ".NET 8",
+      "EF Core",
       "Supabase",
       "MySQL",
       "PostgreSQL",
@@ -49,7 +56,7 @@ const skillCategories = [
   {
     title: "Tools",
     icon: Wrench,
-    skills: ["Git", "PowerBI", "Jira", "Clickup", "Streamlit"],
+    skills: ["Git", "Docker", "PowerBI", "Jira", "Clickup", "Streamlit"],
   },
 ];
 
