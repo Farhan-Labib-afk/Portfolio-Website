@@ -5,12 +5,12 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    company: "The Gist",
-    position: "Software Developer (Capstone - Industry Partner)",
+    company: "The Gist Technologies Inc.",
+    position: "Software Developer",
     location: "Remote",
     duration: "Sept 2025 - Present",
     description:
-      "Contribute to the development and maintenance of The Gist - Summarized News, a production iOS app available on the Apple App Store.",
+      "Contribute to the development and maintenance of The Gist - Summarized News, a production iOS app available on the Apple App Store, as part of a capstone industry partnership.",
     responsibilities: [
       "Implement user-facing features and resolve bugs in a React Native + TypeScript + Expo codebase, improving reliability and overall UX.",
       "Support Android pre-release testing by debugging platform-specific issues and validating builds in a test environment.",
