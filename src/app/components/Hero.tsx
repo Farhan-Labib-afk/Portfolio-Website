@@ -79,7 +79,7 @@ export function Hero() {
               className="border-gray-300 dark:border-slate-600 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-slate-800/60"
               onClick={() =>
                 window.open(
-                  `${import.meta.env.BASE_URL}resume/Farhan_Labib_Resume.pdf`,
+                  `${import.meta.env.BASE_URL}resume/Farhan.Labib_Resume.pdf`,
                   "_blank"
                 )
               }

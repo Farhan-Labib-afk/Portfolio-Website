@@ -105,7 +105,7 @@ export function Navigation() {
             <Button
               onClick={() =>
                 window.open(
-                  `${import.meta.env.BASE_URL}resume/Farhan_Labib_Resume.pdf`,
+                  `${import.meta.env.BASE_URL}resume/Farhan.Labib_Resume.pdf`,
                   "_blank"
                 )
               }
@@ -163,7 +163,7 @@ export function Navigation() {
             <Button
               onClick={() => {
                 window.open(
-                  `${import.meta.env.BASE_URL}resume/Farhan_Labib_Resume.pdf`,
+                  `${import.meta.env.BASE_URL}resume/Farhan.Labib_Resume.pdf`,
                   "_blank"
                 );
                 setIsMobileMenuOpen(false);

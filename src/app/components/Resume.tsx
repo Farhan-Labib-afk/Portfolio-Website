@@ -45,8 +45,8 @@ export function Resume() {
                     onClick={() => {
                       // In a real implementation, this would download the actual PDF
                       const link = document.createElement("a");
-                      link.href = `${import.meta.env.BASE_URL}resume/Farhan_Labib_Resume.pdf`;
-                      link.download = "Farhan_Labib_Resume.pdf";
+                      link.href = `${import.meta.env.BASE_URL}resume/Farhan.Labib_Resume.pdf`;
+                      link.download = "Farhan.Labib_Resume.pdf";
                       link.click();
                     }}
                   >
@@ -60,7 +60,7 @@ export function Resume() {
                     onClick={() => {
                       // In a real implementation, this would open the PDF in a new tab
                       window.open(
-                        `${import.meta.env.BASE_URL}resume/Farhan_Labib_Resume.pdf`,
+                        `${import.meta.env.BASE_URL}resume/Farhan.Labib_Resume.pdf`,
                         "_blank"
                       );
                     }}
