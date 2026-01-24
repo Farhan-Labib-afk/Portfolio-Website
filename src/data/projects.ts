@@ -83,7 +83,7 @@ export const projects: CategorizedProject[] = [
       "Delivered end-to-end product flow: register/login, tasks, check-ins, dashboard",
       "Enabled profile editing with secure token lifecycle",
       "Built responsive dashboards and charts using Recharts",
-      "Added automated tests and CI to reduce regressions",
+      "Added automated tests and CI/CD to reduce regressions",
     ],
   },
   {
