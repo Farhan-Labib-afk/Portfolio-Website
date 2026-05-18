@@ -15,7 +15,7 @@ export const projects: CategorizedProject[] = [
     id: "gist-capstone",
     category: "Product Engineering",
     featured: true,
-    title: "The Gist (Capstone) - iOS News App",
+    title: "The Gist - iOS News App",
     description:
       "Cross-platform product work focused on authenticated experiences, secure data access, and AI summarization.",
     image: `${import.meta.env.BASE_URL}images/gist.jpg`,
