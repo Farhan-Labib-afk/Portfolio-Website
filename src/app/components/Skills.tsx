@@ -6,7 +6,7 @@ const skillCategories = [
   {
     title: "Languages",
     icon: Code2,
-    skills: ["Python", "TypeScript", "Java", "JavaScript", "C#", "SQL"],
+    skills: ["Python", "TypeScript", "Java", "JavaScript", "C#"],
   },
   {
     title: "Frontend",
@@ -35,7 +35,18 @@ const skillCategories = [
   {
     title: "Tools",
     icon: Wrench,
-    skills: ["Git", "Docker", "PowerBI", "Jira", "Clickup", "Streamlit"],
+    skills: [
+      "Git",
+      "Docker",
+      "SAP",
+      "Power BI",
+      "Tableau",
+      "Excel",
+      "Microsoft 365",
+      "Jira",
+      "ClickUp",
+      "Streamlit",
+    ],
   },
 ];
 
@@ -58,7 +69,7 @@ export function Skills() {
               Skills
             </p>
             <h2 className="mt-4 text-3xl font-bold leading-tight text-[var(--text-primary)] sm:text-4xl">
-              A focused stack for full-stack builds, ML workflows, and team delivery.
+              A focused stack for analytics workflows, full-stack builds, ML workflows, and team delivery.
             </h2>
           </div>
 

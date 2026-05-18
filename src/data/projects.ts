@@ -48,10 +48,9 @@ export const projects: CategorizedProject[] = [
       "Delivered features iteratively via milestone-driven Agile collaboration",
     ],
   },
-      {
+  {
     id: "studypulse",
     category: "Product Engineering",
-    featured: true,
     title: "StudyPulse - Student Productivity & Wellbeing Web App",
     description:
       "Full-stack web app with tasks, daily check-ins, profile editing, and burnout insights, built with a clean architecture backend and a modern React UI.",
@@ -84,6 +83,45 @@ export const projects: CategorizedProject[] = [
       "Enabled profile editing with secure token lifecycle",
       "Built responsive dashboards and charts using Recharts",
       "Added automated tests and CI/CD to reduce regressions",
+    ],
+  },
+  {
+    id: "roadeo",
+    category: "Systems & Team Projects",
+    featured: true,
+    title: "Roadeo - Peer-to-Peer Car Rental Platform",
+    description:
+      "Full-stack car rental platform with renter and owner workflows, booking requests, messaging, cargo-fit search, and Dockerized backend infrastructure.",
+    image: `${import.meta.env.BASE_URL}images/roadeo.jpg`,
+    tags: [
+      "React",
+      "TypeScript",
+      "Express",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Docker",
+      "React Query",
+    ],
+    githubUrl: "https://github.com/Farhan-Labib-afk/Roadeo-Web-App.git",
+    problem:
+      "Peer-to-peer car rental needs more than a listing grid: renters need searchable availability and practical cargo fit, while owners need controlled approvals, messaging, listing management, and clear trip rules.",
+    solution:
+      "Built Roadeo as a role-aware marketplace with separate renter and owner workspaces, inventory filtering, booking request flows, messaging, listing controls, and cargo-fit tooling for real luggage and moving needs.",
+    architecture: [
+      "React 18 + TypeScript + Vite frontend with React Router routes for public, renter, and owner workflows",
+      "TanStack Query service layer for backend-backed inventory, bookings, listings, profiles, auth, and messaging",
+      "Node.js + Express + TypeScript API with Zod validation, JWT auth, rate limiting, and structured middleware",
+      "PostgreSQL 16 database modeled through Drizzle ORM for users, cars, bookings, messages, reviews, and profiles",
+      "Cargo-fit logic maps dimensions, presets, and plain-language hauling needs into practical vehicle filters with AI-assisted and rule-based fallbacks",
+      "Docker Compose setup runs the frontend, backend, and database together for full-stack local demos",
+    ],
+    technicalDetails:
+      "Implemented and integrated product flows across search, trip details, car details, owner listings, booking approvals, inbox messaging, profile state, and backend persistence. The project uses typed service boundaries, route-level tests, backend route/service tests, and Dockerized handoff scripts to keep the multi-role marketplace maintainable.",
+    results: [
+      "Delivered a working full-stack marketplace with renter search, owner listing management, booking approval, and messaging flows",
+      "Added cargo-fit search so users can filter cars by luggage, stroller, moving boxes, cargo volume, and fold-flat seat needs",
+      "Moved core runtime data to backend APIs backed by PostgreSQL instead of frontend-only mock state",
+      "Packaged the app with Docker Compose and documented demo accounts, test commands, and local setup for team handoff",
     ],
   },
   {
@@ -126,7 +164,6 @@ export const projects: CategorizedProject[] = [
   {
     id: "cifar10-cnn",
     category: "Machine Learning / AI",
-    featured: true,
     title: "CIFAR-10 CNN Classifier - Scratch vs ResNet18",
     description:
       "PyTorch training pipeline + Streamlit dashboard comparing a custom CNN against transfer learning with ResNet18 on CIFAR-10.",
@@ -162,7 +199,6 @@ export const projects: CategorizedProject[] = [
   {
     id: "self-checkout",
     category: "Systems & Team Projects",
-    featured: true,
     title: "Self-Checkout System Simulator",
     description:
       "Java desktop simulation with customer/attendant UIs, bagging-area discrepancy logic, and payment flows validated with JUnit tests. Code available upon request.",

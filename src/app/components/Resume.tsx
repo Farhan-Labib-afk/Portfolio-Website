@@ -35,9 +35,10 @@ export function Resume() {
                 Farhan Labib - Resume
               </h2>
               <p className="mt-4 max-w-3xl text-base leading-7 text-[var(--text-muted)]">
-                Available for 4/8/12/16 months internships starting Summer 2026 in
-                Machine Learning Engineering, Backend Development, or Full-Stack
-                roles. Open to relocating anywhere in Canada.
+                Available for 4-12 month roles starting Fall 2026 in data
+                analytics, data science, supply chain analytics, backend
+                development, or software engineering. Open to relocating anywhere
+                in Canada.
               </p>
             </div>
 

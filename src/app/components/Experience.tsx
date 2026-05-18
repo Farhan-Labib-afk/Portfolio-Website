@@ -1,22 +1,39 @@
 import { motion, useInView, useReducedMotion } from "motion/react";
 import { useRef } from "react";
-import { Briefcase, Calendar, CheckCircle2, MapPin } from "lucide-react";
+import { Briefcase, Calendar, CheckCircle2, ExternalLink, MapPin } from "lucide-react";
 
 const experiences = [
   {
+    company: "PepsiCo, Inc.",
+    companyUrl: "https://www.pepsico.com/",
+    position: "Supply Chain Analyst Intern",
+    duration: "May 2026 - Present",
+    status: "Current Role",
+    description:
+      "Supporting supply chain analytics work by turning SAP and operational data into clearer reporting, insights, and decision-support workflows.",
+    responsibilities: [
+      "Work with SAP and operational datasets to validate, organize, and analyze supply chain information for planning and reporting.",
+      "Build dashboards and recurring reports with Power BI, Tableau, and Excel to support performance tracking and process visibility.",
+      "Use Microsoft 365 tools to document insights, coordinate updates, and translate data findings into stakeholder-friendly summaries.",
+    ],
+    tags: ["Supply Chain", "SAP", "Power BI", "Tableau", "Excel", "Microsoft 365"],
+  },
+  {
     company: "The Gist Technologies Inc.",
+    companyUrl: "https://apps.apple.com/ca/app/the-gist-summarized-news/id6471227626",
     position: "Software Developer",
     location: "Remote",
-    duration: "Sept 2025 - Present",
+    duration: "Sept 2025 - Apr 2026",
+    status: "Previous Role",
     description:
-      "Contribute to the development and maintenance of The Gist - Summarized News, a production iOS app available on the Apple App Store, as part of a capstone industry partnership.",
+      "Contributed to the development and maintenance of The Gist - Summarized News, a production iOS app available on the Apple App Store, as part of a capstone industry partnership.",
     responsibilities: [
-      "Implement user-facing features and resolve bugs in a React Native + TypeScript + Expo codebase, improving reliability and overall UX.",
-      "Support Android pre-release testing by debugging platform-specific issues and validating builds in a test environment.",
-      "Collaborate with stakeholders and teammates in an Agile workflow, participating in sprint planning, peer code reviews, and feature demos.",
-      "Maintain and troubleshoot backend functionality using Supabase (Auth + database) and external APIs, including making backend configuration and data updates when required.",
-      "Use GitHub-based workflows including feature branching, pull requests, and coordinated versioned releases.",
-      "Write and maintain unit tests for shipped features to improve code quality and prevent regressions.",
+      "Implemented user-facing features and resolved bugs in a React Native + TypeScript + Expo codebase, improving reliability and overall UX.",
+      "Supported Android pre-release testing by debugging platform-specific issues and validating builds in a test environment.",
+      "Collaborated with stakeholders and teammates in an Agile workflow, participating in sprint planning, peer code reviews, and feature demos.",
+      "Maintained and troubleshot backend functionality using Supabase (Auth + database) and external APIs, including backend configuration and data updates when required.",
+      "Used GitHub-based workflows including feature branching, pull requests, and coordinated versioned releases.",
+      "Wrote and maintained unit tests for shipped features to improve code quality and prevent regressions.",
     ],
     tags: ["React Native", "TypeScript", "Expo", "Supabase"],
   },
@@ -41,7 +58,7 @@ export function Experience() {
               Experience
             </p>
             <h2 className="mt-4 text-3xl font-bold leading-tight text-[var(--text-primary)] sm:text-4xl">
-              Production-minded work on shipped software.
+              Software, data, and analytics experience across shipped products and operations.
             </h2>
           </div>
 
@@ -58,15 +75,22 @@ export function Experience() {
                   <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
                     <div>
                       <p className="font-mono-ui text-xs font-medium uppercase tracking-[0.14em] text-[var(--accent)]">
-                        Current Role
+                        {exp.status}
                       </p>
                       <h3 className="mt-2 text-2xl font-bold text-[var(--text-primary)]">
                         {exp.position}
                       </h3>
-                      <div className="mt-3 flex items-center gap-2 text-sm font-semibold text-[var(--text-primary)]">
+                      <a
+                        href={exp.companyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-3 inline-flex w-fit items-center gap-2 rounded-full text-sm font-semibold text-[var(--text-primary)] outline-none transition-colors hover:text-[var(--accent)] focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--surface)]"
+                        aria-label={`Open ${exp.company} website in a new tab`}
+                      >
                         <Briefcase className="size-4 text-[var(--accent)]" />
                         {exp.company}
-                      </div>
+                        <ExternalLink className="size-3.5 text-[var(--accent)]" />
+                      </a>
                     </div>
 
                     <div className="flex flex-wrap gap-2 text-sm text-[var(--text-muted)] lg:justify-end">
@@ -74,10 +98,12 @@ export function Experience() {
                         <Calendar className="size-4" />
                         {exp.duration}
                       </span>
-                      <span className="inline-flex items-center gap-2 rounded-full border border-[var(--border-soft)] bg-[var(--surface-soft)] px-3 py-2">
-                        <MapPin className="size-4" />
-                        {exp.location}
-                      </span>
+                      {exp.location && (
+                        <span className="inline-flex items-center gap-2 rounded-full border border-[var(--border-soft)] bg-[var(--surface-soft)] px-3 py-2">
+                          <MapPin className="size-4" />
+                          {exp.location}
+                        </span>
+                      )}
                     </div>
                   </div>
 

@@ -1,6 +1,7 @@
 import { motion, useReducedMotion } from "motion/react";
 import {
   ArrowRight,
+  BarChart3,
   BrainCircuit,
   Boxes,
   Code2,
@@ -20,6 +21,11 @@ const techStack = [
   "Flask",
   "Supabase",
   "PyTorch",
+  "pandas",
+  "Power BI",
+  "Tableau",
+  "SAP",
+  "Excel",
   "MySQL",
 ];
 
@@ -32,6 +38,12 @@ const systemRows = [
     metric: `${countFor("Product Engineering")} projects`,
     detail: "mobile, web, auth",
     icon: Code2,
+  },
+  {
+    label: "Data Analytics",
+    metric: "SAP, BI, Excel",
+    detail: "reporting, insights",
+    icon: BarChart3,
   },
   {
     label: "ML / AI",
@@ -80,7 +92,7 @@ export function Hero() {
           className="min-w-0 max-w-3xl"
         >
           <p className="font-mono-ui mb-5 text-xs font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
-            Software Engineering / ML / Product
+            Software Engineering / Data / ML
           </p>
 
           <div className="mb-5 flex items-center gap-2">
@@ -116,12 +128,12 @@ export function Hero() {
           </h1>
 
           <p className="mt-5 max-w-full text-base font-semibold leading-7 text-[var(--text-primary)] sm:text-xl">
-            CS @UofCalgary | ML & Full-Stack Developer
+            CS @UCalgary | Data Analytics, ML & Software Engineering
           </p>
 
           <p className="mt-5 max-w-2xl text-base leading-7 text-[var(--text-muted)] sm:text-lg">
-            I build production-style software, applied ML tooling, and team systems
-            with clean interfaces and practical engineering depth.
+            I build production-style software, data workflows, and applied ML tools
+            that turn messy requirements into clear, useful systems.
           </p>
 
           <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center">
@@ -191,7 +203,7 @@ export function Hero() {
                   Current Focus
                 </p>
                 <h2 className="mt-2 text-2xl font-bold text-[var(--text-primary)]">
-                  Building reliable product systems.
+                  Building reliable product and data systems.
                 </h2>
               </div>
               <span className="inline-flex size-3 rounded-full bg-[var(--accent)] shadow-[0_0_0_6px_color-mix(in_srgb,var(--accent)_15%,transparent)]" />
@@ -224,7 +236,7 @@ export function Hero() {
                 Availability
               </p>
               <p className="mt-2 text-sm leading-6 text-[var(--text-primary)]">
-                Open to 4/8/12/16 month internships starting Summer 2026.
+                Open to 4-12 month roles starting Fall 2026.
               </p>
             </div>
           </div>

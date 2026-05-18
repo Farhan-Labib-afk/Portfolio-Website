@@ -36,9 +36,9 @@ export function Contact() {
           initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 18 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: prefersReducedMotion ? 0 : 18 }}
           transition={{ duration: 0.55, ease: "easeOut" }}
-          className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start"
+          className="grid min-w-0 gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start"
         >
-          <div>
+          <div className="min-w-0">
             <p className="font-mono-ui text-xs font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
               Contact
             </p>
@@ -46,12 +46,13 @@ export function Contact() {
               Let's build something that ships.
             </h2>
             <p className="mt-5 max-w-xl text-base leading-7 text-[var(--text-muted)]">
-              I love collaborating on product-focused software and applied ML.
-              Reach out for capstone demos, project collaboration, or dev roles.
+              I love collaborating on data analytics, applied ML, and
+              product-focused software. Reach out for project collaboration,
+              demos, or roles.
             </p>
           </div>
 
-          <div className="rounded-[1.5rem] border border-[var(--border-soft)] bg-[var(--surface)] p-3 shadow-[var(--shadow-soft)]">
+          <div className="min-w-0 rounded-[1.5rem] border border-[var(--border-soft)] bg-[var(--surface)] p-3 shadow-[var(--shadow-soft)]">
             {contactLinks.map((link, index) => {
               const Icon = link.icon;
               return (

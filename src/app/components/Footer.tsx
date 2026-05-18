@@ -29,7 +29,7 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold">Farhan Labib</h3>
             <p className="mt-2 text-sm text-[#f4f1ea]/64">
-              CS @UofCalgary | ML & Full-Stack Developer
+              CS @UCalgary | Data Analytics, ML & Software Engineering
             </p>
           </div>
 
@@ -75,7 +75,7 @@ export function Footer() {
         </div>
 
         <div
-          className={`fixed bottom-6 right-6 z-50 transition-all duration-300 ${
+          className={`fixed bottom-4 right-4 z-50 transition-all duration-300 sm:bottom-6 sm:right-6 ${
             showBackToTop
               ? "translate-y-0 opacity-100"
               : "pointer-events-none translate-y-2 opacity-0"
@@ -84,7 +84,7 @@ export function Footer() {
           <button
             type="button"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="inline-flex size-11 items-center justify-center rounded-full border border-white/12 bg-[#090b0d]/90 text-[#f4f1ea] shadow-[0_16px_40px_rgba(0,0,0,0.34)] outline-none backdrop-blur-xl transition-colors hover:border-[#67d8c2] hover:text-[#67d8c2] focus-visible:ring-2 focus-visible:ring-[#67d8c2]"
+            className="inline-flex size-10 items-center justify-center rounded-full border border-white/12 bg-[#090b0d]/90 text-[#f4f1ea] shadow-[0_16px_40px_rgba(0,0,0,0.34)] outline-none backdrop-blur-xl transition-colors hover:border-[#67d8c2] hover:text-[#67d8c2] focus-visible:ring-2 focus-visible:ring-[#67d8c2] sm:size-11"
             aria-label="Back to top"
           >
             <ArrowUp className="size-4" />

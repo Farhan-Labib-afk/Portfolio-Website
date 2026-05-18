@@ -22,13 +22,7 @@ const getInitialTheme = (): Theme => {
     return storedTheme;
   }
 
-  if (document.documentElement.classList.contains("dark")) {
-    return "dark";
-  }
-
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+  return "light";
 };
 
 export function Navigation() {

@@ -9,6 +9,7 @@ const CATEGORY_ORDER: ProjectCategory[] = [
   "Machine Learning / AI",
   "Systems & Team Projects",
 ];
+const FEATURED_FILTER = "Featured";
 const ALL_FILTER = "All";
 
 export function Projects() {
@@ -17,7 +18,7 @@ export function Projects() {
   const prefersReducedMotion = useReducedMotion();
   const [selected, setSelected] = useState<ProjectDetail | null>(null);
   const [open, setOpen] = useState(false);
-  const [activeFilter, setActiveFilter] = useState<string>(ALL_FILTER);
+  const [activeFilter, setActiveFilter] = useState<string>(FEATURED_FILTER);
 
   const sortedProjects = useMemo(() => {
     return [...projects].sort(
@@ -26,7 +27,10 @@ export function Projects() {
   }, []);
 
   const filterCounts = useMemo(() => {
-    const counts = new Map<string, number>([[ALL_FILTER, sortedProjects.length]]);
+    const counts = new Map<string, number>([
+      [FEATURED_FILTER, sortedProjects.filter((project) => project.featured).length],
+      [ALL_FILTER, sortedProjects.length],
+    ]);
     CATEGORY_ORDER.forEach((category) => {
       counts.set(
         category,
@@ -37,6 +41,9 @@ export function Projects() {
   }, [sortedProjects]);
 
   const filteredProjects = useMemo(() => {
+    if (activeFilter === FEATURED_FILTER) {
+      return sortedProjects.filter((project) => project.featured);
+    }
     if (activeFilter === ALL_FILTER) return sortedProjects;
     return sortedProjects.filter((project) => project.category === activeFilter);
   }, [activeFilter, sortedProjects]);
@@ -69,7 +76,7 @@ export function Projects() {
               className="flex flex-wrap gap-2 rounded-[1.5rem] border border-[var(--border-soft)] bg-[var(--surface)] p-1.5 shadow-[0_10px_30px_rgba(17,19,22,0.05)]"
               aria-label="Project filters"
             >
-              {[ALL_FILTER, ...CATEGORY_ORDER].map((category) => {
+              {[FEATURED_FILTER, ...CATEGORY_ORDER].map((category) => {
                 const isActive = activeFilter === category;
                 return (
                   <button
@@ -88,6 +95,19 @@ export function Projects() {
                   </button>
                 );
               })}
+              <button
+                type="button"
+                onClick={() => setActiveFilter(ALL_FILTER)}
+                className={`font-mono-ui rounded-full px-3.5 py-2 text-xs font-medium outline-none transition-colors focus-visible:ring-2 focus-visible:ring-[var(--accent)] ${
+                  activeFilter === ALL_FILTER
+                    ? "bg-[var(--text-primary)] text-[var(--bg-primary)]"
+                    : "text-[var(--text-muted)] hover:bg-[var(--surface-soft)] hover:text-[var(--text-primary)]"
+                }`}
+                aria-pressed={activeFilter === ALL_FILTER}
+              >
+                See all
+                <span className="ml-2 opacity-70">{filterCounts.get(ALL_FILTER)}</span>
+              </button>
             </div>
           </div>
 

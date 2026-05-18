@@ -3,6 +3,7 @@ dist/
 .vite/
 .turbo/
 .cache/
+tmp-mobile-check/
 .DS_Store
 Thumbs.db
 *.log

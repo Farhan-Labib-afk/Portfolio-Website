@@ -44,8 +44,8 @@ export function About() {
             </h2>
             <p className="mt-5 max-w-xl text-base leading-7 text-[var(--text-muted)]">
               I am a Computer Science student focused on building clear, reliable
-              projects across full-stack product engineering, applied machine
-              learning, and team-based systems.
+              projects across data analytics, full-stack product engineering,
+              applied machine learning, and team-based systems.
             </p>
           </div>
 
