@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
-import { Github, Linkedin, Mail, Heart, ArrowUp } from "lucide-react";
+import { ArrowUp, Github, Linkedin, Mail } from "lucide-react";
+
+const footerLinks = [
+  { label: "About", href: "#about" },
+  { label: "Projects", href: "#projects" },
+  { label: "Skills", href: "#skills" },
+  { label: "Contact", href: "#contact" },
+];
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -7,73 +14,80 @@ export function Footer() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowBackToTop(window.scrollY > 200);
+      setShowBackToTop(window.scrollY > 260);
     };
 
     handleScroll();
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <footer className="bg-gray-900 text-white py-12 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="text-center md:text-left">
-            <h3 className="text-xl font-bold mb-2">Farhan Labib</h3>
-            <p className="text-gray-400 dark:text-gray-500">
+    <footer className="bg-[#090b0d] px-4 py-12 text-[#f4f1ea] sm:px-6">
+      <div className="mx-auto max-w-6xl">
+        <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+          <div>
+            <h3 className="text-xl font-bold">Farhan Labib</h3>
+            <p className="mt-2 text-sm text-[#f4f1ea]/64">
               CS @UofCalgary | ML & Full-Stack Developer
             </p>
           </div>
 
-          <div className="flex items-center gap-6">
+          <nav className="flex flex-wrap gap-4 text-sm text-[#f4f1ea]/68" aria-label="Footer navigation">
+            {footerLinks.map((link) => (
+              <a key={link.label} href={link.href} className="transition-colors hover:text-[#67d8c2]">
+                {link.label}
+              </a>
+            ))}
+          </nav>
+
+          <div className="flex items-center gap-2">
             <a
               href="https://github.com/Farhan-Labib-afk"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors"
+              className="inline-flex size-10 items-center justify-center rounded-full border border-white/12 text-[#f4f1ea]/70 transition-colors hover:border-[#67d8c2] hover:text-[#67d8c2]"
               aria-label="GitHub"
             >
-              <Github className="w-6 h-6" />
+              <Github className="size-4" />
             </a>
             <a
               href="https://www.linkedin.com/in/farhan-labib-edu/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors"
+              className="inline-flex size-10 items-center justify-center rounded-full border border-white/12 text-[#f4f1ea]/70 transition-colors hover:border-[#67d8c2] hover:text-[#67d8c2]"
               aria-label="LinkedIn"
             >
-              <Linkedin className="w-6 h-6" />
+              <Linkedin className="size-4" />
             </a>
             <a
               href="mailto:farhan.labib@ucalgary.ca"
-              className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors"
+              className="inline-flex size-10 items-center justify-center rounded-full border border-white/12 text-[#f4f1ea]/70 transition-colors hover:border-[#67d8c2] hover:text-[#67d8c2]"
               aria-label="Email"
             >
-              <Mail className="w-6 h-6" />
+              <Mail className="size-4" />
             </a>
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 dark:text-gray-500 text-sm">
-          <p className="flex items-center justify-center gap-2">
-            © {currentYear} Farhan Labib. Built with{" "}
-            <Heart className="w-4 h-4 text-red-500" /> using React & Tailwind CSS
-          </p>
+        <div className="mt-10 border-t border-white/10 pt-6 text-sm text-[#f4f1ea]/54">
+          <p>&copy; {currentYear} Farhan Labib</p>
         </div>
+
         <div
           className={`fixed bottom-6 right-6 z-50 transition-all duration-300 ${
             showBackToTop
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-2 pointer-events-none"
+              ? "translate-y-0 opacity-100"
+              : "pointer-events-none translate-y-2 opacity-0"
           }`}
         >
           <button
+            type="button"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-gray-900/90 text-white hover:bg-gray-900 shadow-lg ring-1 ring-white/10 transition-colors"
+            className="inline-flex size-11 items-center justify-center rounded-full border border-white/12 bg-[#090b0d]/90 text-[#f4f1ea] shadow-[0_16px_40px_rgba(0,0,0,0.34)] outline-none backdrop-blur-xl transition-colors hover:border-[#67d8c2] hover:text-[#67d8c2] focus-visible:ring-2 focus-visible:ring-[#67d8c2]"
             aria-label="Back to top"
           >
-            <ArrowUp className="w-4 h-4" />
+            <ArrowUp className="size-4" />
           </button>
         </div>
       </div>

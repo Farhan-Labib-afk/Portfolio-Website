@@ -10,20 +10,15 @@ import { Footer } from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-950">
+    <div className="relative isolate min-h-screen overflow-x-clip bg-[var(--bg-primary)] text-[var(--text-primary)]">
+      <div className="noise-overlay" aria-hidden="true" />
       <Navigation />
       <Hero />
-      <div className="mx-auto h-px w-full max-w-6xl bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
       <About />
-      <div className="mx-auto h-px w-full max-w-6xl bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
       <Experience />
-      <div className="mx-auto h-px w-full max-w-6xl bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
       <Projects />
-      <div className="mx-auto h-px w-full max-w-6xl bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
       <Skills />
-      <div className="mx-auto h-px w-full max-w-6xl bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
       <Resume />
-      <div className="mx-auto h-px w-full max-w-6xl bg-gradient-to-r from-transparent via-indigo-200 to-transparent dark:via-indigo-500/40" />
       <Contact />
       <Footer />
     </div>
